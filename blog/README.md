@@ -1,2 +1,0 @@
-# JaviCeRodriguez.github.io
-## Algo
