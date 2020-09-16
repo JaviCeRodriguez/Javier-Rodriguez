@@ -66,8 +66,8 @@ nav ul li a:hover{
     transform: translate(-50%, -50%);
     color: #fff;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 4.5vw;
     font-family: 'Calibri', Arial, sans-serif;
     font-weight: bolder;
-    text-shadow: 4px 4px black;
+    text-shadow: 0.3vw 0.3vw black;
 }
