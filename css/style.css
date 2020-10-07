@@ -5,7 +5,7 @@
 
 body{
     background: #c2c2c2;
-    font-family: 'Calibri';
+    font-family: 'Varta', sans-serif;
 }
 
 header{
@@ -17,7 +17,7 @@ header{
     border-bottom-color: #222222;
     border-bottom-width: 1px;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .logo{
