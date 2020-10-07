@@ -5,7 +5,7 @@
 
 body{
     background: #c2c2c2;
-    font-family: calibri;
+    font-family: 'Calibri';
 }
 
 header{
@@ -24,33 +24,50 @@ header{
     width: 30%;
     height: 55px;
     float: left;
-    border: 1px solid red;
+    border: 0px solid red;
     margin-top: 0px;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 18px;
+    display: inline-block;
+    margin-left: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
 
 .menu{
     width: 45%;
     height: 55px;
     float: right;
-    border: 1px solid red;
+    border: 0px solid red;
     margin-top: 0px;
 }
 
 .menu ul{
-    float: right;
+    float: left;
 }
 
-.menu ul li{
+.menu ul a{
     list-style: none;
-    display: inline-block;
-    margin-top: 20px;
     text-decoration: none;
+    display: inline-block;
+    padding: 18px;
+    background: #363636;
 }
 
-.logo{
-    color: #fff;
+.menu ul a:hover{
+    list-style: none;
     text-decoration: none;
     display: inline-block;
-    margin: 0px;
-    font-size: 20px;
+    padding: 18px;
+    background: #ffa51e;
+}
+
+.menu ul a li{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
