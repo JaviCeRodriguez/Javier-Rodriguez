@@ -25,7 +25,7 @@ header{
 .logo{
     width: 30%;
     height: 55px;
-    float: left;
+    float: left; /* Usar flex */
     border: 0px solid red;
     margin-top: 0px;
 }
@@ -49,7 +49,7 @@ header{
 }
 
 .menu ul{
-    float: left;
+    float: left; /* Usar flex */
 }
 
 .menu ul a{
@@ -76,52 +76,22 @@ header{
     font-weight: bold;
 }
 
-.inicio{
+.container1{
     display: block;
     background: #bbb;
     height:100vh;
     width: 100vw;
     padding: 60px;
-    padding-left: 120px;
+    padding-left: 3vw;
     box-sizing:border-box;
 }
 
-.sobre-mi{
+.container2{
     display: block;
     background: #e28800;
     height:100vh;
     width: 100vw;
     padding: 60px;
-    padding-left: 120px;
-    box-sizing:border-box;
-}
-
-.proyectos{
-    display: block;
-    background: #bbb;
-    height:100vh;
-    width: 100vw;
-    padding: 60px;
-    padding-left: 120px;
-    box-sizing:border-box;
-}
-
-.desarrollo{
-    display: block;
-    background: #e28800;
-    height:100vh;
-    width: 100vw;
-    padding: 60px;
-    padding-left: 120px;
-    box-sizing:border-box;
-}
-
-.contacto{
-    display: block;
-    background: #bbb;
-    height:100vh;
-    width: 100vw;
-    padding: 60px;
-    padding-left: 120px;
+    padding-left: 3vw;
     box-sizing:border-box;
 }
