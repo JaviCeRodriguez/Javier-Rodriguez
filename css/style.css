@@ -76,23 +76,25 @@ header{
 @media only screen and (max-width: 850px){
     .logo{
         width: 100%;
+        justify-content: flex-start;
     }
 
     .ul-nav{
         display: table;
         width: 28%;
-        margin-right: 0px;
-        padding-right: 0px;
+        /*margin-right: 0px;
+        padding-right: 0px;*/
     }
 
     .a-nav{
         list-style-type: none;
-		display: block;
-		padding: .3em 1em;
+        display: block;
+        margin: 0;
+		padding: .1em 2em;
 		background: #363636;
 		color: #fff;
         text-decoration: none;
-        width: 11vw;
+        width: 22vw;
     }
 
     .a-nav:hover{
@@ -159,6 +161,7 @@ header{
         overflow: visible;
         cursor: pointer;
         margin: 0;
+        border: 1px solid red;
     }
 }
 
