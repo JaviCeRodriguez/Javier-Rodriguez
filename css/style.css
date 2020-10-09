@@ -10,6 +10,10 @@ body{
     height: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Menu normal 834px o más*/
 .flex{
     display: flex;
@@ -62,7 +66,8 @@ body{
 }
 
 header{
-    position:fixed;
+    position: fixed;
+    z-index: 20;
     height: 55px;
     background: #363636;
     box-shadow: 0px 0px 30px #A4A4A4;
@@ -169,10 +174,9 @@ header{
     background: #bbb;
     height:100vh;
     width: 100vw;
-    padding: 60px;
-    padding-left: 3vw;
-    padding-top: 15vh;
-    box-sizing:border-box;
+    padding-top: 8.8vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
 }
 
 .container2{
@@ -180,8 +184,39 @@ header{
     background: #e28800;
     height:100vh;
     width: 100vw;
-    padding: 60px;
-    padding-left: 3vw;
-    padding-top: 15vh;
-    box-sizing:border-box;
+    padding-top: 8.8vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
 }
+
+.text-h1{
+    font-size: 60px;
+    padding-top: 5vw;
+}
+
+.text-h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 10vw;
+}
+
+.inicio-div .text-h1, .inicio-div .text-h2{
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-family: 'Calibri';
+}
+
+.inicio-div{
+    color: white;
+    background: url('/img/inicio.jpg') top left/cover no-repeat;
+    opacity: 90%;
+    height: 91vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
