@@ -24,19 +24,23 @@
         <div class="contenedor flex">
             <header class="cont-header flex">
                 <div class="logo flex"><p>Portfolio > Javier Rodriguez</p></div>
+                <!-- Inicio de menu desplegable -->
+                <input type="checkbox" class="checkboxcito" id="checkboxcito">
+                <label for="checkboxcito" class="checkbox-label"></label>
                 <div class="nav flex">
                     <ul class="ul-nav flex">
-                        <a class="a-nav" href="#"><li class="li-nav flex">INICIO</li></a>
-                        <a class="a-nav" href="#"><li class="li-nav flex">SOBRE MI</li></a>
-                        <a class="a-nav" href="#"><li class="li-nav flex">PROYECTOS</li></a>
-                        <a class="a-nav" href="#"><li class="li-nav flex">DESARROLLO</li></a>
-                        <a class="a-nav" href="#"><li class="li-nav flex">CONTACTO</li></a>
+                        <a class="a-nav" href="#inicio"><li class="li-nav flex">INICIO</li></a>
+                        <a class="a-nav" href="#sobre-mi"><li class="li-nav flex">SOBRE MI</li></a>
+                        <a class="a-nav" href="#proyecto"><li class="li-nav flex">PROYECTOS</li></a>
+                        <a class="a-nav" href="#desarrollo"><li class="li-nav flex">DESARROLLO</li></a>
+                        <a class="a-nav" href="#contacto"><li class="li-nav flex">CONTACTO</li></a>
                     </ul>
                 </div>
+                <!-- Fin de menu desplegable -->
             </header>
         </div>
         <!-- Sección: Inicio -->
-        <section class="container1">
+        <section class="container1" id="inicio">
             <div>
                 <h1>Javier Rodriguez</h1>
                 <h2>Desarrollador Full Stack - Estudiante de Ingeniería</h2>
@@ -47,7 +51,7 @@
             </div>
         </section>
         <!-- Sección: Sobre mi -->
-        <section class="container2">
+        <section class="container2" id="sobre-mi">
             <h2>Sobre mí</h2>
             <div class="foto">
                 <img alt="Foto" width="" height="">
@@ -62,14 +66,14 @@
             </div>
         </section>
         <!-- Sección: Proyectos -->
-        <section class="container1">
+        <section class="container1" id="proyecto">
             <div><a href=""><img src="" alt="Proyecto 1"></a></div>
             <div><a href=""><img src="" alt="Proyecto 2"></a></div>
             <div><a href=""><img src="" alt="Proyecto 3"></a></div>
             <div><a href=""><img src="" alt="Proyecto 4"></a></div>
         </section>
         <!-- Sección: Desarrollo -->
-        <section class="container2">
+        <section class="container2" id="desarrollo">
             <h2>Me especializo en las siguientes tecnologías:</h2>
             <div>
                 <ul>
@@ -85,7 +89,7 @@
             </div>
         </section>
         <!-- Sección: Contacto -->
-        <section class="container1">
+        <section class="container1" id="contacto">
             <div>
                 <form action="" metho="post">
                     <label>
