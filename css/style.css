@@ -31,7 +31,7 @@ html{
     align-items: center;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .cont-header{
@@ -82,7 +82,6 @@ header{
     .logo{
         width: 100%;
         justify-content: flex-start;
-        padding-left: 9.5vw;
     }
 
     .ul-nav{
@@ -192,14 +191,14 @@ header{
 
 .text-h1{
     font-size: 60px;
-    padding: 2vw;
+    padding-top: 5vw;
 }
 
 .text-h2{
-    font-size: 40px;
-    padding: 10vw;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    padding-bottom: 10vw;
 }
 
 .inicio-div .text-h1, .inicio-div .text-h2{
@@ -215,41 +214,9 @@ header{
     opacity: 90%;
     height: 91vh;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     position: relative;
     flex-wrap: wrap;
 }
 
-.fa {
-    padding: 1vw;
-    font-size: 30px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background: #f5008f;
-    color: white;
-}
-
-.fa-github {
-    background: #000;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #416fd3;
-    color: white;
-}
