@@ -193,10 +193,11 @@ header{
 .text-h1{
     font-size: 60px;
     padding: 2vw;
+    padding-top: 5vw;
 }
 
 .text-h2{
-    font-size: 40px;
+    font-size: 32px;
     padding: 10vw;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -215,7 +216,7 @@ header{
     opacity: 90%;
     height: 91vh;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     position: relative;
     flex-wrap: wrap;
 }
