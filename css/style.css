@@ -1,3 +1,5 @@
+/*---------------- General ----------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +16,44 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Menu normal 834px o más*/
 .flex{
     display: flex;
 }
 
+/*---------------- Contenedores de secciones ----------------*/
+
+.container1{
+    display: block;
+    background: #bbb;
+    height:100vh;
+    padding-top: 15vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
+}
+
+.container2{
+    display: block;
+    background: #e28800;
+    height:100vh;
+    padding-top: 15vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
+}
+
+/*---------------- Cabezera ----------------*/
+
+header{
+    position: fixed;
+    z-index: 10;
+    height: 55px;
+    background: #363636;
+    box-shadow: 0px 0px 30px #A4A4A4;
+    border-bottom-style: solid;
+    border-bottom-color: #222222;
+    border-bottom-width: 1px;
+}
+
+/* Menu normal 834px o más*/
 .checkboxcito{
     display: none;
 }
@@ -65,17 +100,6 @@ html{
     background: #ffa51e;
 }
 
-header{
-    position: fixed;
-    z-index: 20;
-    height: 55px;
-    background: #363636;
-    box-shadow: 0px 0px 30px #A4A4A4;
-    border-bottom-style: solid;
-    border-bottom-color: #222222;
-    border-bottom-width: 1px;
-}
-
 /* Menu hamburguesa p/ < 834px */
 
 @media only screen and (max-width: 850px){
@@ -88,8 +112,6 @@ header{
     .ul-nav{
         display: table;
         width: 28%;
-        /*margin-right: 0px;
-        padding-right: 0px;*/
     }
 
     .a-nav{
@@ -111,7 +133,7 @@ header{
     .nav{
         position: absolute;
         top: 0;
-        right: 0;
+        right: 0; /* 35px */
         width: 55px;
         height: 55px;
         color: #363636;
@@ -140,7 +162,6 @@ header{
         top: 0;
         right: 0;
         background: #363636;
-        /*z-index: -1;*/
     }
 
     .checkboxcito {
@@ -170,21 +191,12 @@ header{
     }
 }
 
-.container1{
+/*---------------- Inicio ----------------*/
+
+#inicio{
     display: block;
     background: #bbb;
     height:100vh;
-    /*width: 100vw;*/
-    padding-top: 8.8vh;
-    box-sizing: border-box;
-    border-bottom: 1px solid #363636;
-}
-
-.container2{
-    display: block;
-    background: #e28800;
-    height:100vh;
-    /*width: 100vw;*/
     padding-top: 8.8vh;
     box-sizing: border-box;
     border-bottom: 1px solid #363636;
@@ -221,6 +233,48 @@ header{
     flex-wrap: wrap;
 }
 
+/*---------------- Desarrollo ----------------*/
+
+#desarrollo{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#desarrollo h2{
+    width: 100%;
+    padding-left: 40px;
+}
+
+.tecno{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    background-color: #afafaf;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+}
+
+.title-tecno{
+    border-bottom: 1px solid #363636;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.logo-tecno{
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+/*---------------- Social ----------------*/
 .fa {
     padding: 1vw;
     font-size: 30px;
@@ -253,4 +307,11 @@ header{
 .fa-linkedin {
     background: #416fd3;
     color: white;
+}
+
+/*---------------- Pie ----------------*/
+
+footer{
+    text-align: center;
+    font-weight: bold;
 }
