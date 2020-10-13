@@ -241,7 +241,7 @@ header{
     padding-right: 5px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #desarrollo h2{
@@ -254,6 +254,7 @@ header{
     align-items: center;
     border: 1px solid #363636;
     border-radius: 2px;
+    box-shadow: 5px 5px 5px #363636;
     background-color: #afafaf;
     width: 100px;
     height: 120px;
