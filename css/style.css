@@ -26,7 +26,7 @@ html{
     display: block;
     background: #bbb;
     height:100vh;
-    padding-top: 15vh;
+    padding-top: 11vh;
     box-sizing: border-box;
     border-bottom: 1px solid #363636;
 }
@@ -35,7 +35,7 @@ html{
     display: block;
     background: #e28800;
     height:100vh;
-    padding-top: 15vh;
+    padding-top: 11vh;
     box-sizing: border-box;
     border-bottom: 1px solid #363636;
 }
