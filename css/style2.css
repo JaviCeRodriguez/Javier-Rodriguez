@@ -1,20 +1,46 @@
 /*---------------- General ----------------*/
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background: #c2c2c2;
+    font-family: 'Varta', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #c2c2c2;
-    font-family: 'Varta', sans-serif;
-    width: 100%;
-    height: 100%;
+.flex{
+    display: flex;
 }
 
+/*---------------- Contenedores de secciones ----------------*/
+
+.container1{
+    display: block;
+    background: #bbb;
+    height:100vh;
+    padding-top: 11vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
+}
+
+.container2{
+    display: block;
+    background: #e28800;
+    height:100vh;
+    padding-top: 11vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
+}
+
+/*---------------- Cabezera ----------------*/
 header{
     position: fixed;
     z-index: 10;
@@ -26,18 +52,13 @@ header{
     border-bottom-width: 1px;
 }
 
-.flex{
-    display: flex;
-}
-
-/*---------------- Menú (834px o más) ----------------*/
-.cont-header{
-    justify-content: space-between;
-    width: 100%;
+/* Menu normal 834px o más*/
+.checkboxcito{
+    display: none;
 }
 
 .logo{
-    width: 25%;
+    width: 39%;
     padding: 4px;
     border: 0px solid red;
     justify-content: center;
@@ -47,77 +68,65 @@ header{
     font-size: 30px;
 }
 
-.checkboxcito{
-    display: none;
+.cont-header{
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav{
-    width: 75%;
+    width: 60%;
     border: 0px solid green;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-.nav ul{
-    float: right;
-}
-
-.nav ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.nav a{
+.a-nav{
     text-decoration: none;
     color: #fff;
     background: #363636;
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
-    padding: 21px 5px 20px 5px;
-    margin: 4px;
+    padding: 5px;
+    margin: 5px;
     height: 45px;
     line-height: 45px;
     transition: 0.3s linear;
 }
 
-.nav a:hover{
+.a-nav:hover{
     color: #363636;
     background: #ffa51e;
 }
 
-/*---------------- Menú (hasta 833px) ----------------*/
-@media only screen and (max-width: 800px){
+/* Menu hamburguesa p/ < 834px */
+
+@media only screen and (max-width: 855px){
     .logo{
         width: 100%;
         justify-content: flex-start;
-        padding-left: 1.9vw;
+        padding-left: 9.5vw;
     }
 
-    .checkboxcito {
-        display: none;
+    .ul-nav{
+        display: table;
+        width: 28%;
     }
 
-    .checkboxcito:checked ~ .nav{
-        overflow: visible;
-    }
-
-    .checkboxcito:checked ~ .nav::after {
-        content: "X";
-        color: #fff;
-    }
-
-    .checkbox-label {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 20;
-        width: 50px;
-        height: 50px;
-        color: #fff;
-        overflow: visible;
-        cursor: pointer;
+    .a-nav{
+        list-style-type: none;
+        display: block;
         margin: 0;
+		padding: .1em 1.8em;
+		background: #363636;
+		color: #fff;
+        text-decoration: none;
+        width: 22vw;
+    }
+
+    .a-nav:hover{
+		background: #ffa51e;
+		color: #363636;
     }
 
     .nav{
@@ -143,9 +152,7 @@ header{
         right: 30%;
     }
 
-    .nav ul{
-        display: table;
-        width: 28%;
+    .ul-nav {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -156,111 +163,73 @@ header{
         background: #363636;
     }
 
-    .nav a{
-        list-style-type: none;
-        display: block;
+    .checkboxcito {
+        display: none;
+    }
+
+    .checkboxcito:checked ~ .nav{
+        overflow: visible;
+    }
+
+    .checkboxcito:checked ~ .nav::after {
+        content: "x";
+        color: #fff;
+    }
+
+    .checkbox-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        overflow: visible;
+        cursor: pointer;
         margin: 0;
-		padding: .1em 1.8em;
-		background: #363636;
-		color: #fff;
-        text-decoration: none;
-        width: 18vw;
     }
-
-    .nav a:hover{
-		background: #ffa51e;
-		color: #363636;
-    }
-}
-
-/*---------------- Secciones ----------------*/
-.container1{
-    display: block;
-    background: #bbb;
-    height:100vh;
-    padding-top: 11vh;
-    box-sizing: border-box;
-    border-bottom: 1px solid #363636;
-}
-
-.container2{
-    display: block;
-    background: #e28800;
-    height:100vh;
-    padding-top: 11vh;
-    box-sizing: border-box;
-    border-bottom: 1px solid #363636;
 }
 
 /*---------------- Inicio ----------------*/
+
 #inicio{
-    padding: 0;
+    display: block;
+    background: #bbb;
+    height:100vh;
+    padding-top: 8.8vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #363636;
 }
 
-.inicio-div{
-    color: white;
-    background: url('/img/inicio.jpg') top left/cover no-repeat;
-    opacity: 90%;
-    height: 100vh;
-    justify-content: center;
-    /* align-items: center; */
-    position: relative;
-    flex-wrap: wrap;
+.text-h1{
+    font-size: 60px;
+    padding: 10vw;
+    padding-top: 5vw;
 }
 
-.inicio-div h1, .inicio-div h2{
+.text-h2{
+    font-size: 32px;
+    padding: 10vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.inicio-div .text-h1, .inicio-div .text-h2{
     margin: 0;
     text-shadow: 2px 2px 6px #000;
     text-align: center;
     font-family: 'Calibri';
 }
 
-.inicio-div h1{
-    font-size: 80px;
-    padding: 10vw;
-    padding-top: 10vw;
-}
-
-.inicio-div h2{
-    font-size: 32px;
-    padding: 10vw;
-    /* text-transform: uppercase; */
-    letter-spacing: 4px;
-}
-
-/*---------------- Sobre mi ----------------*/
-.sobre-mi-div{
-    padding: 4vh 2vw 4vh 2vw;
+.inicio-div{
+    color: white;
+    background: url('/img/inicio.jpg') top left/cover no-repeat;
+    opacity: 90%;
+    height: 91vh;
     justify-content: center;
     align-items: center;
-}
-
-.sobre-mi-div .foto{
-    width: 50%;
-    border: 0px solid green;
-}
-
-.sobre-mi-div .descripcion{
-    width: 50%;
-    border: 0px solid green;
-}
-
-.sobre-mi-div .foto img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 2px solid #363636;
-}
-
-/*---------------- Sobre mi ----------------*/
-.proyectos{
-    justify-content: space-around;
-    align-content: center;
-}
-
-.proyecto-div a img{
-    width: 350px;
-    height: 250px;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 /*---------------- Desarrollo ----------------*/
@@ -281,7 +250,6 @@ header{
 .tecno{
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     border: 1px solid #363636;
     border-radius: 2px;
     box-shadow: 5px 5px 5px #363636;
@@ -400,6 +368,7 @@ header{
 }
 
 /*---------------- Pie ----------------*/
+
 footer{
     text-align: center;
     font-weight: bold;

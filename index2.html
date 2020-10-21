@@ -23,91 +23,89 @@
     <!-- Cuerpo -->
     <body>
         <!-- Logo y menu-->
-        <header class="cont-header flex">
-            <div class="logo flex"><p>Portfolio  💻</p></div>
-            <!-- Inicio de menu desplegable -->
-            <input type="checkbox" class="checkboxcito" id="checkboxcito">
-            <label for="checkboxcito" class="checkbox-label"></label>
-            <div class="nav flex">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobre-mi">SOBRE MI</a></li>
-                    <li><a href="#proyecto">PROYECTOS</a></li>
-                    <li><a href="#desarrollo">DESARROLLO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                </ul>
-            </div>
-            <!-- Fin de menu desplegable -->
-        </header>
+        <div class="contenedor flex">
+            <header class="cont-header flex">
+                <div class="logo flex"><p>Portfolio  💻</p></div>
+                <!-- Inicio de menu desplegable -->
+                <input type="checkbox" class="checkboxcito" id="checkboxcito">
+                <label for="checkboxcito" class="checkbox-label"></label>
+                <div class="nav flex">
+                    <ul class="ul-nav flex">
+                        <a class="a-nav" href="#inicio"><li class="li-nav flex">INICIO</li></a>
+                        <a class="a-nav" href="#sobre-mi"><li class="li-nav flex">SOBRE MI</li></a>
+                        <a class="a-nav" href="#proyecto"><li class="li-nav flex">PROYECTOS</li></a>
+                        <a class="a-nav" href="#desarrollo"><li class="li-nav flex">DESARROLLO</li></a>
+                        <a class="a-nav" href="#contacto"><li class="li-nav flex">CONTACTO</li></a>
+                    </ul>
+                </div>
+                <!-- Fin de menu desplegable -->
+            </header>
+        </div>
         <!-- Sección: Inicio -->
         <section class="container1" id="inicio">
             <div class="inicio-div flex">
-                <h1>Javier Rodriguez</h1>
-                <h2>Desarrollador Web - Estudiante de Ingeniería</h2>
+                <h1 class="text-h1">Javier Rodriguez</h1>
+                <h2 class="text-h2">Desarrollador Web - Estudiante de Ingeniería</h2>
             </div>
         </section>
         <!-- Sección: Sobre mi -->
         <section class="container2" id="sobre-mi">
             <h2>Sobre mí</h2>
-            <div class="sobre-mi-div flex">
-                <div class="foto">
-                    <img src="img/foto.jpg" alt="Foto">
-                </div>
-                <div class="descripcion">
-                    <p>
-                        Hola! Soy Javier y soy Desarrollador Web Full Stack.<br/>
-                        Empecé como hobby a desarrollar webs durante 2020 y luego decidí
-                        capacitarme para llevar adelante proyectos personales y de clientes.<br/>
-                        Actualmente estudio Ingeniería en la Universidad Nacional de San Martín.
-                    </p>
-                </div>
+            <div class="foto">
+                <img alt="Foto" width="" height="">
+            </div>
+            <div class="descripcion">
+                <p>
+                    Hola! Soy Javier y soy Desarrollador Web Full Stack.<br/>
+                    Empecé como hobby a desarrollar webs durante 2020 y luego decidí
+                    capacitarme para llevar adelante proyectos personales y de clientes.<br/>
+                    Actualmente estudio Ingeniería en la Universidad Nacional de San Martín.
+                </p>
             </div>
         </section>
         <!-- Sección: Proyectos -->
         <section class="container1" id="proyecto">
-            <div class="proyectos flex">
-                <div class="proyecto-div"><a href=""><img src="img/proyectos/web-bordes-de-pizza.jpg" alt="Proyecto 1"></a></div>
-                <div class="proyecto-div"><a href=""><img src="img/proyectos/portfolio.png" alt="Proyecto 2"></a></div>
-                <div class="proyecto-div"><a href=""><img src="" alt="Proyecto 3"></a></div>
-                <div class="proyecto-div"><a href=""><img src="" alt="Proyecto 4"></a></div>
-            </div>      
+            <div><a href=""><img src="" alt="Proyecto 1"></a></div>
+            <div><a href=""><img src="" alt="Proyecto 2"></a></div>
+            <div><a href=""><img src="" alt="Proyecto 3"></a></div>
+            <div><a href=""><img src="" alt="Proyecto 4"></a></div>
         </section>
         <!-- Sección: Desarrollo -->
-        <section class="container2 flex" id="desarrollo">
+        <section class="container2" id="desarrollo">
             <h2>Me especializo en las siguientes tecnologías:</h2>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">HTML5</h3>
                 <img class="logo-tecno" src="/img/logos/html5.svg" alt="HTML5">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">CSS3</h3>
                 <img class="logo-tecno" src="/img/logos/css3.svg" alt="CSS3">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">JavaScript</h3>
                 <img class="logo-tecno" src="/img/logos/logo-javascript.svg" alt="JavaScript">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">Python</h3>
                 <img class="logo-tecno" src="/img/logos/python-5.svg" alt="Python">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">MySQL</h3>
                 <img class="logo-tecno" src="/img/logos/mysql-7.svg" alt="MySQL">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">DJango</h3>
                 <img class="logo-tecno" src="/img/logos/django-community.svg" alt="DJango">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">PHP</h3>
                 <img class="logo-tecno" src="/img/logos/php-1.svg" alt="PHP">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">Flask</h3>
                 <img class="logo-tecno" src="/img/logos/flask.svg" alt="Flask">
             </div>
-            <div class="tecno flex">
+            <div class="tecno">
                 <h3 class="title-tecno">Node.JS</h3>
                 <img class="logo-tecno" src="/img/logos/nodejs-1.svg" alt="Node.JS">
             </div>
