@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <!-- Titulo -->
-        <title>Inicio</title>
+        <title>Javier Rodriguez | Portfolio</title>
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -65,11 +65,32 @@
         </section>
         <!-- Sección: Proyectos -->
         <section class="container1" id="proyecto">
+            <h2>Proyectos</h2>
             <div class="proyectos flex">
-                <div class="proyecto-div"><a href=""><img src="img/proyectos/web-bordes-de-pizza.jpg" alt="Proyecto 1"></a></div>
-                <div class="proyecto-div"><a href=""><img src="img/proyectos/portfolio.png" alt="Proyecto 2"></a></div>
-                <div class="proyecto-div"><a href=""><img src="" alt="Proyecto 3"></a></div>
-                <div class="proyecto-div"><a href=""><img src="" alt="Proyecto 4"></a></div>
+                <div class="proyecto-div">
+                    <a href="">
+                        <img src="img/proyectos/blog.png" alt="Proyecto 1">
+                    </a>
+                    <div class="text-block">Proyecto 1</div>
+                </div>
+                <div class="proyecto-div">
+                    <a href="">
+                        <img src="img/proyectos/blog.png" alt="Proyecto 2">
+                    </a>
+                    <div class="text-block">Proyecto 2</div>
+                </div>
+                <div class="proyecto-div">
+                    <a href="">
+                        <img src="img/proyectos/blog.png" alt="Proyecto 3">
+                    </a>
+                    <div class="text-block">Proyecto 3</div>
+                </div>
+                <div class="proyecto-div">
+                    <a href="">
+                        <img src="img/proyectos/blog.png" alt="Proyecto 4">
+                    </a>
+                    <div class="text-block">Proyecto 4</div>
+                </div>
             </div>      
         </section>
         <!-- Sección: Desarrollo -->
@@ -115,28 +136,33 @@
         <!-- Sección: Contacto -->
         <section class="container1" id="contacto">
             <h2>Contacto y redes</h2>
-            <div class="formulario">
-                <form action="" metho="post">
-                    <label>
-                        <legend>Nombre</legend>
-                        <input type="text" name="Nombre" placeholder="Escriba su nombre" required>
-                    </label>
-                    <label>
-                        <legend>Mail</legend>
-                        <input type="text" name="Mail" placeholder="Escriba su mail" required>
-                    </label>
-                    <label>
-                        <legend>Mensaje</legend>
-                        <textarea name="Mensaje" placeholder="Escriba su mensaje"></textarea>
-                    </label>
-                    <button type="sumbit">Enviar</button>
-                </form>
-            </div>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-github"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="contact flex">
+                <div class="contacto-div">
+                    <form action="" method="post" class="contacto-form">
+                        <span class="span-half puja-left">
+                            <label>Nombre
+                                <input type="text" name="name" placeholder="Escriba su nombre" required>
+                            </label>
+                        </span>
+                        <span class="span-half puja-right">
+                            <label>Mensaje
+                                <textarea name="message" placeholder="Escribe algo por aquí..." required></textarea>
+                            </label>
+                        </span>
+                        <span class="span-half puja-left">
+                            <label>E-mail
+                                <input type="text" name="email" placeholder="Escriba su e-mail" required>
+                            </label>
+                        </span>
+                        <button type="submit" class="button submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
             </div>
         </section>
         <!-- Pie -->
