@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 16px;
     text-decoration: none;
     list-style-type: none;
     --color-base: #c2c2c2;
@@ -24,6 +25,11 @@ body{
 
 .flex{
     display: flex;
+}
+
+.section-container1, .section-container2{
+    width: 100%;
+    height: 100vh;
 }
 
 /*---------------- Header ----------------*/
@@ -171,10 +177,10 @@ nav{
 }
 
 /*---------------- Inicio ----------------*/
-
 .inicio-div{
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     height: 100vh;
     background: url('/img/inicio.jpg') top left/cover no-repeat;
@@ -182,22 +188,24 @@ nav{
     color: white;
 }
 
-.inicio-div h1, .inicio-div h2{
+.inicio-div .name h1, .inicio-div .rol h2{
     margin: 0;
     text-shadow: 2px 2px 6px #000;
     text-align: center;
     font-family: 'Calibri';
 }
 
-.inicio-div h1{
-    font-size: 80px;
-    padding: 10vw;
+.inicio-div .name h1{
+    font-size: 95px;
     padding-top: 10vw;
 }
 
-.inicio-div h2{
-    font-size: 32px;
-    padding: 10vw;
+.inicio-div .rol{
+    flex-direction: column;
+}
+
+.inicio-div .rol h2{
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -206,9 +214,17 @@ nav{
 footer{
     justify-content: center;
     align-items: center;
-    font-size: 13px;
     font-family: 'Inter', sans-serif;
     color: antiquewhite;
     background-color: var(--color-footer);
     height: 30px;
+}
+
+footer small{
+    font-size: 12px;
+}
+
+/*---------------- Medias ----------------*/
+@media only screen and (max-width: 650px){
+
 }
