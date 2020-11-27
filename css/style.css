@@ -150,10 +150,6 @@ header{
     background-color: var(--color-orange);
 }
 
-.container-proyectos .proyecto a{
-
-}
-
 .container-proyectos .proyecto img{
     width: 280px;
 }
@@ -213,21 +209,37 @@ header{
         font-size: 16px;
         padding: 15px 5px;
     }
-
+    
+    .container-inicio .title h1{
+        font-size: 30px;
+    }
+    
+    .container-inicio .subtitle h2{
+        font-size: 18px;
+    }
+    
     .container-sobre .foto img{
         width: 280px;
         height: 280px;
     }
-
+    
     .container-sobre .text-wrapper{
         width: 90%;
     }
 
-    .container-inicio .title h1{
+    .container-sobre .text-wrapper h3{
+        font-size: 30px;
+    }
+    
+    .container-sobre .text-wrapper p{
+        font-size: 15px;
+    }
+
+    .container-proyectos .title-section{
         font-size: 25px;
     }
 
-    .container-inicio .subtitle h2{
-        font-size: 12px;
+    .container-proyectos .proyecto h3{
+        font-size: 20px;
     }
 }
