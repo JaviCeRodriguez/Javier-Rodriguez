@@ -155,13 +155,6 @@ header{
     .container-sobre .text-wrapper{
         width: 90%;
     }
-}
-
-@media (max-width: 480px){
-    .navbar ul li a{
-        font-size: 16px;
-        padding: 15px 5px;
-    }
 
     .container-inicio .title h1{
         font-size: 35px;
@@ -170,8 +163,23 @@ header{
     .container-inicio .subtitle h2{
         font-size: 15px;
     }
+}
+
+@media (max-width: 480px){
+    .navbar ul li a{
+        font-size: 16px;
+        padding: 15px 5px;
+    }
 
     .container-sobre .text-wrapper{
         width: 90%;
+    }
+
+    .container-inicio .title h1{
+        font-size: 30px;
+    }
+
+    .container-inicio .subtitle h2{
+        font-size: 12px;
     }
 }
