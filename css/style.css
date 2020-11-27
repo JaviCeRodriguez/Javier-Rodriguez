@@ -25,8 +25,12 @@ body{
     display: flex;
 }
 
-.section-black, .section-orange{
-    height: 100vh;
+.section-black{
+    background-color: var(--color-black)
+}
+
+.section-orange{
+    background-color: var(--color-orange)
 }
 
 /*---------------- Header ----------------*/
@@ -70,7 +74,7 @@ header{
     flex-direction: column;
     position: relative;
     height: 100vh;
-    padding-left: 20px;
+    padding-left: 5vw;
     background: url('/img/logos/inicio-imgcut.jpg') center center/cover no-repeat;
 }
 
@@ -87,7 +91,36 @@ header{
     font-size: 30px;
 }
 
+/*---------------- Sobre mi ----------------*/
+.container-sobre{
+    padding: 40px;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+}
 
+.container-sobre .foto img{
+    width: 344.5px;
+    height: 344.5px;
+    border-radius: 50%;    
+}
+
+.container-sobre .text-wrapper{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.container-sobre .text-wrapper h3{
+    font-size: 40px;
+}
+
+.container-sobre .text-wrapper p{
+    font-size: 25px;
+}
 
 /*---------------- Pie ----------------*/
 .footer{
@@ -114,8 +147,15 @@ header{
 }
 
 /*---------------- Medias ----------------*/
-@media (min-width: 481) and (max-width: 768px){
+@media (max-width: 768px){
+    .navbar ul li a{
+        font-size: 16px;
+        padding: 15px 5px;
+    }
 
+    .container-sobre .text-wrapper{
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px){
@@ -130,5 +170,9 @@ header{
 
     .container-inicio .subtitle h2{
         font-size: 15px;
+    }
+
+    .container-sobre .text-wrapper{
+        width: 90%;
     }
 }
