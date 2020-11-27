@@ -59,12 +59,12 @@ header{
     padding: 15px 20px;
     height: 55px;
     line-height: 55px;
-    transition: 0.3s linear;
 }
 
 .navbar ul li a:hover{
     color: var(--color-black);
     background-color: var(--color-orange);
+    transition: 0.3s linear;
 }
 
 /*---------------- Inicio ----------------*/
@@ -97,7 +97,6 @@ header{
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
-    height: 100vh;
 }
 
 .container-sobre .foto img{
