@@ -147,7 +147,7 @@ header{
 }
 
 .container-proyectos .proyecto:hover{
-    background-color: var(--color-orange);
+    background-color: var(--color-black);
 }
 
 .container-proyectos .proyecto img{
@@ -159,6 +159,39 @@ header{
     font-size: 25px;
 }
 
+/*---------------- Skills ----------------*/
+.container-skills{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.container-skills .title-section{
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper-skill{
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-skill img{
+    width: 80px;
+    height: 80px;
+}
+
+.wrapper-skill h3{
+    color: var(--color-white);
+}
+
+/*---------------- Contacto ----------------*/
+.container-contacto{
+    height: 50vh;
+}
 
 /*---------------- Pie ----------------*/
 .footer{
