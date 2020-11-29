@@ -33,6 +33,11 @@ body{
     background-color: var(--color-orange)
 }
 
+.title-section{
+    justify-content: center;
+    width: 100%;
+}
+
 /*---------------- Header ----------------*/
 header{
     position: fixed;
@@ -54,7 +59,6 @@ header{
 }
 
 .navbar ul li a{
-    border: 0px solid red;
     font-size: 18px;
     padding: 15px 20px;
     height: 55px;
@@ -93,9 +97,10 @@ header{
 
 /*---------------- Sobre mi ----------------*/
 .container-sobre{
-    padding: 40px;
+    padding: 60px 20px;
     justify-content: space-around;
     align-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -113,27 +118,63 @@ header{
     width: 50%;
 }
 
-.container-sobre .text-wrapper h3{
-    font-size: 40px;
+.container-sobre .title-section h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--color-white);
 }
 
 .container-sobre .text-wrapper p{
     font-size: 25px;
 }
 
+/*---------------- Skills ----------------*/
+.container-skills{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.container-skills .title-section h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--color-white);
+}
+
+.wrapper-skill{
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: transform .5s;
+}
+
+.wrapper-skill:hover{
+    transform: scale(1.2)
+}
+
+.wrapper-skill img{
+    width: 80px;
+    height: 80px;
+}
+
+.wrapper-skill h3{
+    color: var(--color-white);
+}
+
 /*---------------- Proyectos ----------------*/
 .container-proyectos{
-    padding: 40px 20px;
+    padding: 60px 20px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
 }
 
-.container-proyectos .title-section{
-    width: 100%;
-    justify-content: center;
-    font-size: 30px;
+.container-proyectos .title-section h2{
+    font-size: 50px;
     margin-bottom: 30px;
+    color: var(--color-black);
 }
 
 .container-proyectos .proyecto{
@@ -148,6 +189,10 @@ header{
 
 .container-proyectos .proyecto:hover{
     background-color: var(--color-black);
+    -webkit-box-shadow: 7px 13px 20px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 13px 20px 3px rgba(0,0,0,0.75);
+    box-shadow: 7px 13px 20px 3px rgba(0,0,0,0.75);
+    transform: scale(1.1)
 }
 
 .container-proyectos .proyecto img{
@@ -156,41 +201,40 @@ header{
 
 .container-proyectos .proyecto h3{
     text-align: center;
+    color: var(--color-black);
     font-size: 25px;
 }
 
-/*---------------- Skills ----------------*/
-.container-skills{
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-}
-
-.container-skills .title-section{
-    width: 100%;
-    justify-content: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.wrapper-skill{
-    flex-direction: column;
-    align-items: center;
-}
-
-.wrapper-skill img{
-    width: 80px;
-    height: 80px;
-}
-
-.wrapper-skill h3{
+.container-proyectos .proyecto:hover h3{
     color: var(--color-white);
 }
 
 /*---------------- Contacto ----------------*/
 .container-contacto{
-    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.container-contacto .title-section h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--color-white);
+}
+
+.container-contacto .contact-logo{
+    padding: 20px;
+    transition: transform .5s;
+}
+
+.container-contacto .contact-logo:hover{
+    transform: scale(1.2)
+}
+
+.container-contacto img{
+    width: 80px;
+    height: 80px;
 }
 
 /*---------------- Pie ----------------*/
@@ -235,6 +279,26 @@ header{
     .container-inicio .subtitle h2{
         font-size: 15px;
     }
+
+    .title-section h2{
+        font-size: 40px;
+    }
+    
+    .container-proyectos .title-section h2{
+        font-size: 40px;
+    }
+    
+    .container-sobre .title-section h2{
+        font-size: 40px;
+    }
+    
+    .container-skills .title-section h2{
+        font-size: 40px;
+    }
+
+    .container-contacto .title-section h2{
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 480px){
@@ -267,12 +331,24 @@ header{
     .container-sobre .text-wrapper p{
         font-size: 15px;
     }
-
-    .container-proyectos .title-section{
-        font-size: 25px;
+    
+    .container-proyectos .title-section h2{
+        font-size: 35px;
+    }
+    
+    .container-sobre .title-section h2{
+        font-size: 35px;
+    }
+    
+    .container-skills .title-section h2{
+        font-size: 35px;
     }
 
-    .container-proyectos .proyecto h3{
-        font-size: 20px;
+    .container-proyectos .title-section h2{
+        font-size: 35px;
+    }
+
+    .container-contacto .title-section h2{
+        font-size: 35px;
     }
 }
