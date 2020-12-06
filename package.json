@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Desarrollador Frontend: HTML, CSS, JS",
     "scripts": {
-        "start": "live-server --port=8080"
+        "start": "live-server --port=4040"
     },
     "keywords": [],
     "author": "Javier Rodriguez (javicerodriguez@gmail.com)",
