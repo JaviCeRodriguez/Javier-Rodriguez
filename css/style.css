@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Heebo', sans-serif;
     text-decoration: none;
     list-style-type: none;
     --color-base: #C4C4C4;
@@ -67,6 +67,7 @@ header {
     padding: 15px 20px;
     height: 55px;
     line-height: 55px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navbar ul li a:hover {
@@ -90,6 +91,7 @@ header {
 
 .container-inicio .title h1 {
     font-size: 60px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container-inicio .subtitle {
@@ -99,6 +101,7 @@ header {
 
 .container-inicio .subtitle h2 {
     font-size: 30px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -133,7 +136,7 @@ header {
 }
 
 .container-sobre .text-wrapper p {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
@@ -252,6 +255,31 @@ header {
     height: 80px;
 }
 
+.container-contacto .contact-cv {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.container-contacto .contact-cv a {
+    padding: 20px 120px;
+    border-radius: 5px;
+    border: 1px solid rgba(221, 221, 221, 0.3);
+    background-color: var(--color-black);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+
+.container-contacto .contact-cv a:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 7px 13px 20px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 13px 20px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 13px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
 
 /*---------------- Pie ----------------*/
 
@@ -268,6 +296,7 @@ header {
     color: var(--color-white);
     font-size: 13px;
     font-weight: 500;
+    font-family: 'Oswald', sans-serif;
 }
 
 .footer .credits img {
