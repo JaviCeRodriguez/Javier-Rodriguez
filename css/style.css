@@ -8,7 +8,7 @@
     list-style-type: none;
     --color-base: #C4C4C4;
     --color-black: #3A3A3A;
-    --color-orange: #F17A25;
+    --color-orange: #e06004;
     --color-white: #FFFFFF;
     color: var(--color-white)
 }
@@ -198,6 +198,7 @@ header {
     width: 280px;
     height: 200px;
     padding: 60px 20px;
+    border: 1px solid var(--color-orange);
     border-radius: 10px;
     transition: 0.3s linear;
 }
