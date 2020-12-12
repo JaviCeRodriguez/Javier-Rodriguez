@@ -192,6 +192,10 @@ header {
     color: var(--color-white);
 }
 
+.container-proyectos .proyecto-card{
+    margin: 3px;
+}
+
 .container-proyectos .proyecto {
     flex-direction: column;
     justify-content: space-around;
