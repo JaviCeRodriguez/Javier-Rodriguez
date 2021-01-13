@@ -134,3 +134,49 @@ footer a{
     color: white;
     font-weight: 600;
 }
+
+@media (max-width: 670px){
+    .welcome h2{
+        font-size: 1.2em;
+    }
+
+    .welcome p{
+        font-size: 0.8em;
+    }
+
+    .search{
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    .search .inputProfile input{
+        font-size: 0.8em;
+    }
+
+    .search button{
+        font-size: 0.9em;
+    }
+
+    .dataProfile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dataProfile .figProfile img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .dataProfile .infoText{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .dataProfile .infoText .figSocial img{
+        width: 35px;
+    }
+
+    .state h1{
+        font-size: 1.5rem;
+    }
+}
