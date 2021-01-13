@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    background-color: #06090f;
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+label{
+    font-weight: 500;
+}
+
+.welcome{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.search{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 80%;
+    padding: 1rem 0.2rem;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+}
+
+.search .inputProfile{
+    justify-content: center;
+    align-items: center;
+}
+
+.search .inputProfile input{
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 0.4rem;
+    margin: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+}
+
+.search button{
+    width: 10rem;
+    padding: 0.8rem;
+    background-color: #238636;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dataProfile{
+    display: none;
+}
+
+.dataProfile{
+    justify-content: center;
+    margin: auto;
+    padding: 1rem 0.2rem;
+    width: 80%;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+}
+
+.dataProfile figure{
+    width: 40%;
+    justify-content: center;
+}
+
+.dataProfile figure img{
+    width: 230px;
+    height: 230px;
+    border: 1px solid #30363d;
+    border-radius: 50%;
+}
+
+.dataProfile .infoText{
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 0.8rem;
+}
+
+.dataProfile .infoText label{
+    padding-bottom: 0.5rem;
+}
+
+.dataProfile .infoText label span{
+    font-weight: normal;
+    padding-left: 0.2rem;
+}
+
+#state{
+    display: none;
+}
+
+.state h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+footer{
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer a{
+    text-decoration:none;
+    color: white;
+    font-weight: 600;
+}
