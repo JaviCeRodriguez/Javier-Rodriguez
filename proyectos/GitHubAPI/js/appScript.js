@@ -1,13 +1,17 @@
+const idArray = ['name', 'loc', 'bio', 'ghLink', 'twLink'];
+const socialArray = [idArray[idArray.length-2], idArray[idArray.length-1]];
+const urls = ['https://github.com/', 'https://twitter.com/']
+
+console.log(`Hola! Bienvenido a la consola. Este es un mensaje para solo agradecer a CourseIt.io por los cursos, aprendí un montón y logré hacer esta página.`)
+
 async function fetchData () {
     const inputValue = document.getElementById('userGH').value;
     const data = await fetch(`https://api.github.com/users/${inputValue}`);
     const json = await data.json();
     const img = document.getElementById('imgProfile');
-    const idArray = ['name', 'loc', 'bio', 'twProfile', 'user'];
-    const jsonArray = [json.name, json.location, json.bio, json.twitter_username, json.login];
+    const jsonArray = [json.name, json.location, json.bio, json.login, json.twitter_username];
 
     if(data.status != 404){
-        console.log(json);
         document.getElementById('dataProfile').style.display = 'flex';
         document.getElementById('state').style.display = 'none';
         img.setAttribute('src', json.avatar_url);
@@ -26,8 +30,21 @@ async function fetchData () {
 
 function validData(idElement, data){
     if (data === null || data === ''){
-        document.getElementById(idElement).innerText = '-';
+        if (socialArray.includes(idElement)){
+            socialData(idElement, urls[socialArray.indexOf(idElement)] + '#');
+        } else{
+            document.getElementById(idElement).innerText = '-';
+        }
     } else{
-        document.getElementById(idElement).innerText = data;
+        if (socialArray.includes(idElement)){
+            socialData(idElement, urls[socialArray.indexOf(idElement)] + data);
+        } else{
+            document.getElementById(idElement).innerText = data;
+        }
     }
+}
+
+function socialData(idLink, path){
+    const aElement = document.getElementById(idLink);
+    aElement.setAttribute('href', path);
 }

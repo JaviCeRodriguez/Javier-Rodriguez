@@ -72,12 +72,12 @@ label{
     border-radius: 0.5rem;
 }
 
-.dataProfile figure{
+.dataProfile .figProfile{
     width: 40%;
     justify-content: center;
 }
 
-.dataProfile figure img{
+.dataProfile .figProfile img{
     width: 230px;
     height: 230px;
     border: 1px solid #30363d;
@@ -86,18 +86,30 @@ label{
 
 .dataProfile .infoText{
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 60%;
-    padding: 0.8rem;
+    padding: 1.2rem 0.8rem 0rem 0.8rem;
 }
 
-.dataProfile .infoText label{
+.dataProfile .infoText .labelText{
+    flex-direction: column;
+}
+
+.dataProfile .infoText .labelText label{
     padding-bottom: 0.5rem;
 }
 
-.dataProfile .infoText label span{
+.dataProfile .infoText .labelText label span{
     font-weight: normal;
     padding-left: 0.2rem;
+}
+
+.dataProfile .infoText .figSocial{
+    justify-content: center;
+}
+
+.dataProfile .infoText .figSocial img{
+    padding: 0 1rem;
 }
 
 #state{
